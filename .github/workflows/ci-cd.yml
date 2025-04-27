@@ -6,6 +6,11 @@ on:
   pull_request:
     branches: [master]
 
+# Add permissions block for GitHub Container Registry
+permissions:
+  contents: read
+  packages: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
